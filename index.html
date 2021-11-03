@@ -8,24 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Acompanhamento de estudos para HTML,CSS e JavaScript</h1>
     <hr>
+
     <h2>Uma lista para iniciantes dos principais comandos em:</h2>
+
     <ul>
         <li><a href="tagshtml5iniciante.html">HTML</a></li>
         <li><a href="css.html">CSS</a></li>
         <li>JavaScript</li>
     </ul>
     <hr>
+
     <h2>Um pouco sobre HTML, CSS e Java Script</h2>
-    <h3>HTML</h3>
-    <ul>
-        <li>Hyper Text Markup Language (Linguagem de Marcação de Hipertexto).</li>
-        <li>Serve para introduzir o conteúdo da página web, tal como os textos e as mídias, adicionando toda a semântica dos mesmos. Dizendo o que é o cabeçalho, título, parágrafo, imagem, citações, quais são as frases fortes, e em destaque, dizer qual parte deve ser enfatizada, etc. Através das TAGS. Criando assim a estrutura do conteúdo da página.</li>
-        <li>Tudo que está entre os colchetes angulares (&lt; &gt;) é chamado de "Meta Informação"</li>
-        <li>É o sucessor da linguagem SGML (Standard Generalized Markup Language, ou Linguagem Padrão de Marcação Generalizada), que usa colchetes angulares("&lt;" e "&gt;") para separar anotações do texto comum. Em HTML essas anotações são chamadas de "tags"</li>
-        <li>Não é uma linguagem de programação, e sim uma linguagem de marcação, como ja diz o nome. Então diz-se que se desenvolve em HTML</li>
+
+    <h3>HTML - Hyper Text Markup Language (Linguagem de Marcação de Hipertexto):</h3>
+        <p> Serve para introduzir o conteúdo da página web, tal como os textos e as mídias, adicionando toda a semântica dos mesmos. Dizendo o que é o cabeçalho, título, parágrafo, imagem, citações, quais são as frases fortes, e em destaque, dizer qual parte deve ser enfatizada, etc. Através das TAGS. Criando assim a estrutura do conteúdo da página.</p>
+        <p> Tudo que está entre os colchetes angulares (&lt; &gt;) é chamado de "Meta Informação", e atribui semântica ao que está entre a tag de abertura e fechamento da mesma.</p>
+        <p>Algumas tags não apresentam tag de fechamento, como no caso de &lt;img src="https://google.com" alt="Site da Google"/&gt;. Existem algumas que não possuem nem o / no final da tag. Isso porque todas as informações já estão contidas no atributo, ou seja, dentro da tag.</p>
+        <p>É o sucessor da linguagem SGML (Standard Generalized Markup Language, ou Linguagem Padrão de Marcação Generalizada), que usa colchetes angulares("&lt;" e "&gt;") para separar anotações do texto comum. Em HTML essas anotações são chamadas de "tags"</p>
+        <p>Não é uma linguagem de programação, e sim uma linguagem de marcação, como ja diz o nome. Então diz-se que se desenvolve em HTML</p>
+ 
+    <h4>Elementos:</h4>
+        <p>Elementos são as peças que compõem a linguagem HTML. O parágrafo (&lt;p&gt;&lt;/p&gt;) é um elemento, assim como a cabeça (&lt;head&gt;&lt;/head&gt;), o corpo(&lt;body&gt;&lt;/body&gt;), o título (&lt;h1&gt;&lt;/h1&gt;), o cabeçalho, etc.</p>
+
+    <h5>Pai, filho e irmão:</h5>
+        <p>Quando um elemento contém outro elemento, diz-se que ele é pai (parent). 
+        <p>Quando um elemento está contido em outro elemento, diz-se que ele é filho (child)</p>
+        <p>Quando dois elementos estão contidos nos mesmo elementos, diz-se que são irmãos (simblings)</p>
+        <p>Por exemplo:
+            <ul>
+                <li>html é pai de body, que por sua vez é pai de h1</li>
+                <li>Quanado invertido, h1 é filho de body, que por sua vez é filho de html</li>
+                <li>h1 é irmão de h2, pois estão ambos dentro de body, e um não está contido no outro.</li>
+            </ul>
+
+    <h5>Atributos</h5>
+        <p>É um jeito de "catalogar" os elementos, podendo atribuir uma identificação única (id="<var>Nome que queira dar</var>"), ou agrupa-los em classes (class="<var>Nome que queria dar</var>"). Dessa forma esse elemento pode ser distinguido pelo programador de acordo com essa tribuição feita.</p>
+        <p>Por exemplo: &lt;p id="fala5oDoReisemberg" class="FalaDoReisemberg"&gt;-Say my name&lt;/p&gt</p>
+        <p>O parágrafo passa a ter um identificador único, Fala50DoHeisemberg, e passa a fazer parte da classe FalaDoReisemberg</p>
     </ul>
+
     <h3>CSS</h3>
     <ul>
         <li>Cascading Style Sheet (Folhas de Estilo em Cascata).</li>
@@ -40,6 +64,7 @@
         <li>Incorporações em linha sobrescrevem xxx, que por sua vez sobrescrevem as em Cascata.</li>
         <li>É possível utilizar mais de um arquivo .css ao mesmo tempo, daí a palavra "Cascata", tomando cuidado para não deixar o código confuso.</li>
     </ul>
+ 
     <h3>JavaScript</h3>
     <ul>
         <li>Java é o nome de uma ilha produtora de café, também é sinonimo de café em alguns lugares. Script é um conjunto de instruções para que uma função seja executada</li>
@@ -48,6 +73,7 @@
         <li>É uma linguagem de programação</li>
     </ul>
     <hr>
+ 
     <h2>Para entender melhor</h2>
     <picture>
         <source media="(max-width: 750px)" width=350 srcset="images/htmlcar1000.png" type="image/png">
@@ -65,6 +91,6 @@
         <img src="images/javascriptcar1000.png" alt="Equipamentos de um carro">
     </picture>
     <hr>
-    <p><small>Por <a href="perfil.html">Rafael Beguito</a></small></p>
+       <p><small>Por <a href="perfil.html">Rafael Beguito</a></small></p>
 </body>
 </html>
