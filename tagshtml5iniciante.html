@@ -9,106 +9,119 @@
 </head>
 <body>
     <a href="index.html">Voltar</a><br>
-    <h1>TAGS HTML5 (Iniciante)</h1>
+
+    <h1>TAGS HTML5 (Iniciante)</h1><hr>
         <p> As TAGS que estiverem dentro de ( ), ao lado, são comandos que podem ser incrementados.</p>
+
     <h2>Semânticas</h2>
         <ul>
-            <li>Títulos por hierarquia
-        <ul>
-            <li>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&lt; &lt;h5&gt;
+        <li>Títulos por hierarquia</li>
+            <ul>
+            <li>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&lt; &lt;h5&gt;</li>
+            </ul>
+        <li>Parágrafo</li>
+            <ul>
+            <li>&lt;p&gt;</li>
+            </ul>
+        <li>Manter formatação igual à do código</li>
+            <ul>
+            <li>&lt;pre&gt;&lt;/pre&gt;</li>
+            </ul>
+        <li>Termo em destaque (Negrito)</li>
+            <ul>
+            <li>&lt;strong&gt;&lt;/strong&gt;</li>
+            </ul>
+        <li>Termo com ênfase (Itálico)</li>
+            <ul>
+            <li>&lt;em&gt;&lt;/em&gt;</li>
+            </ul>
+        <li>Marca texto</li>
+            <ul>
+            <li>&lt;mark&gt;&lt;/mark&gt;</li>
+            </ul>
+        <li>Texto pequeno</li>
+            <ul>
+            <li>&lt;small&gt;&lt;/small&gt;</li>
+            </ul>
+        <li>Texto deletado (Riscado)</li>
+            <ul>
+            <li>&lt;del&gt;&lt;/del&gt;</li>
+            </ul>
+        <li>Texto inserido (Sublinhado)</li>
+            <ul>
+            <li>&lt;ins&gt;&lt;/ins&gt;</li>
+            </ul>
+        <li>Texto sobrescrito (3<sup>2</sup>)</li>
+            <ul>
+            <li>&lt;sup&gt;&lt;/sup&gt;</li>
+            </ul>
+        <li>Subescrito (H<sub>2</sub>O)</li>
+            <ul>
+            <li>&lt;sub&gt;&lt;/sub&gt;</li>
+            </ul>
+        <li>Abreviações</li>
+            <ul>
+            <li>&lt;abbr title="<var>Significado da Sigla</var>"&gt;&lt;/abbr&gt;</li>
+            </ul>
+        <li>Citações</li>
+            <ol>
+            <li>Parafrase curta (citação)</li>
+                <ul type="circle">
+                <li>&lt;q&gt;&lt;/q&gt;</li>
+                </ul>
+            <li>Parafrase (citação) longa</li>
+                <ul type="circle">
+                <li>&lt;blockquote&gt;&lt;/blockquoteq&gt; (cite="<var>Link relacionado</var>")</li>
+                </ul>
+            </ol>
         </ul>
-            <li>Parágrafo
+
+    <h2>Não semanticas</h2>
         <ul>
-            <li>&lt;p&gt;
+        <li>Quebra de linha</li>
+            <ul>
+            <li>&lt;br&gt;</li>
+            </ul>
+            <li>Linha horizontal</li>
+            <ul>
+            <li>&lt;hr&gt;</li>
+            </ul>            
+            <li>Comentários</li>
+            <ul>
+            <li>&lt;!-- <var>Comentário Aqui</var> --&gt;</li>
+            </ul>
+            <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a> &loarr; Clique</li>
+            <ul>
+            <li>Deve-se copiar o código que vem seguido de & e colar onde deseja que o símbolo apareça</li>
+            </ul>
+            <li>Adicionar ícone à aba (&lt;head&gt;)</li>
+            <ul>
+            <li>&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;</li>
+            </ul>
         </ul>
-            <li>Quebra de linha
+
+    <h3>Listas</h3>
         <ul>
-            <li>&lt;br&gt;
+        <li>&lt;ol&gt;&lt;/ol&gt;   Lista ordenada        (type="1""A""a""I""i"")(start="1"""2""3")
+        <li>&lt;ul&gt;&lt;/ul&gt;   Lista desordenada     (type="circle""disc""square")
+        <li>&lt;li&gt;            A lista em si. Deve ser filha de uma ol ou de uma ul
         </ul>
-            <li>Manter formatação igual à do código
+
+    <h3>Hiperlinks</h3>
         <ul>
-            <li>&lt;pre&gt;&lt;/pre&gt;
+        <li>&lt;a href="<var>Link</var>"&gt;&lt;/a&gt;    Link Externo    (target="_blank" rel="external""nofollow")
+        <li>&lt;a href="<var>Arquivo</var>"&gt;&lt;/a&gt;  Link interno    ("<var>Caminho/Arquivo</var>""../<var>Arquivo</var>" rel="next""prev") <!-- Para voltar vária pastas usa-se ../../../ o número de vezes que a página está localizada -->
+        <li>&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;  Baixar arquivo
         </ul>
-            <li>Linha horizontal
+
+    <h3>Mídias</h3>
+
+    <h4>imagem</h4>
         <ul>
-            <li>&lt;hr&gt;
+        <li>&lt;picture&gt;&lt;/picture&gt;    indica que vai aparecer uma imagem
         </ul>
-            <li>Termo em destaque (Negrito)
-        <ul>
-            <li>&lt;strong&gt;&lt;/strong&gt;
-        </ul>
-            <li>Termo com ênfase (Itálico)
-        <ul>
-            <li>&lt;em&gt;&lt;/em&gt;
-        </ul>
-            <li>Marca texto
-        <ul>
-            <li>&lt;mark&gt;&lt;/mark&gt;
-        </ul>
-            <li>Texto pequeno
-        <ul>
-            <li>&lt;small&gt;&lt;/small&gt;
-        </ul>
-            <li>Texto deletado (Riscado)
-        <ul>
-            <li>&lt;del&gt;&lt;/del&gt;
-        </ul>
-            <li>Texto inserido (Sublinhado)
-        <ul>
-            <li>&lt;ins&gt;&lt;/ins&gt;
-        </ul>
-            <li>Texto sobrescrito (3<sup>2</sup>)
-        <ul>
-            <li>&lt;sup&gt;&lt;/sup&gt;
-        </ul>
-            <li>Subescrito (H<sub>2</sub>O)
-        <ul>
-            <li>&lt;sub&gt;&lt;/sub&gt;
-        </ul>
-            <li>Abreviações
-        <ul>
-            <li>&lt;abbr title="<var>Significado da Sigla</var>"&gt;&lt;/abbr&gt;
-        </ul>
-            <li>Citações (Usa-se &lt;q&gt;&lt;/q&gt; ao invés de digitar aspas para interpretadores de código entenderem a semântica)<br> Ex: &lt;p&gt;Como diria o pai de um amigo: &lt;q&gt;O computador é um burro muito rápido&lt;/q&gt;&lt;/p&gt;
-        <ol>
-            <li>Parafrase curta
-        <ul type="circle">
-            <li>&lt;q&gt;&lt;p&gt;&lt;/p&gt;&lt;/q&gt;
-        </ul>
-            <li>Parafrase longa com link de referência
-        <ul type="circle">
-            <li>&lt;blockquote cite="<var>Link</var>"&gt;&lt;q&gt;&lt;/q&gt;&lt;/blockquoteq&gt;
-        </ul></ol>
-            <li>Comentários
-        <ul>
-            <li>&lt;!-- <var>Comentário Aqui</var> --&gt;
-        </ul>
-        <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a> &loarr; Clique
-        <ul>
-            <li>Deve-se copiar o código que vem seguido de & e colar onde deseja que o símbolo apareça
-        </ul>
-        <li>Adicionar ícone à aba (&lt;head&gt;)
-        <ul>
-        <li>&lt;link rel="shortcut icon" href="<var>caminho/arquivo</var>.ico" type="image/x-icon"&gt;
-        </ul></ul>
-    <h2>Listas</h2>
-        <ul>
-            <li>&lt;ol&gt;&lt;/ol&gt;   Lista ordenada        (type="1""A""a""I""i"")(start="1"""2""3")
-            <li>&lt;ul&gt;&lt;/ul&gt;   Lista desordenada     (type="circle""disc""square")
-            <li>&lt;li&gt;            A lista em si
-        </ul>
-    <h2>Hiperlinks</h2>
-        <ul>
-            <li>&lt;a href="<var>Link</var>"&gt;&lt;/a&gt;    Link Externo    (target="_blank" rel="external""nofollow")
-            <li>&lt;a href="<var>Arquivo</var>"&gt;&lt;/a&gt;  Link interno    ("<var>Caminho/Arquivo</var>""../<var>Arquivo</var>" rel="next""prev") <!-- Para voltar vária pastas usa-se ../../../ o número de vezes que a página está localizada -->
-            <li>&lt;a href="<var>Arquivo</var>" download="<var>Arquivo</var>" type="aplication/<var>Extensão</var>"&gt;&lt;/a&gt;  Baixar arquivo
-        </ul>
-    <h2>Mídias</h2>
-    <h3>imagem</h3>
-        <ul>
-            <li>&lt;picture&gt;&lt;/picture&gt;    indica que vai aparecer uma imagem
-        </ul>
-    <h4>Imagem dinâmica (Tomando como exemplo 3 imagens de mesmo conteúdo, de 150px, 750px e 1000px respectivamente)</h4>
+
+    <h5>Imagem dinâmica (Tomando como exemplo 3 imagens de mesmo conteúdo, de 150px, 750px e 1000px respectivamente)</h5>
         <pre>
         &lt;picture&gt;
             &lt;source media="(max-width: 750px)" srcset="<var>Caminho/Arquivo150px</var>" type="image/<var>Extensão</var>"&gt;
@@ -117,8 +130,9 @@
         &lt;/picture&gt;
         </pre>
         <aside>*Sempre na ordem do maior para o menor, ou do menor para o maior (no caso usando min-width)</aside> 
-    <h3>Áudio</h3>
-    <ol>
+
+    <h4>Áudio</h4>
+        <ol>
         <li>&lt;audio src="<var>caminho/arquivo</var>"&gt;&lt;/audio&gt; (preload="metadata" controls autoplay muted) *No chrome o autoplay só funciona se adicionado o atributo muted
         <li><pre>
 &lt;audio&gt;     (preload="metadata" autoplay muted controls loop) *No chrome o autoplay só funciona se adicionado o atributo muted
@@ -127,11 +141,12 @@
     &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio&lt;/p&gt;
 &lt;/audio&gt;
             </pre></li>
-    </ol>
-    <h3>Vídeo</h3>
-    <ol>
-        <li>
-            <pre>Do próprio servidor:
+        </ol>
+
+    <h4>Vídeo</h4>
+        <ol>
+        <li><pre>
+Do próprio servidor:
 &lt;video&gt;     (witdh="<var>500</var>" preload="metadata" autoplay muted controls loop) *No chrome o autoplay só funciona se adicionado o atributo muted
     &lt;source src="<var>Caminho/Arquivo.mp4</var>" type="video/mp4"&gt;
     &lt;source src="<var>Caminho/Arquivo.m4v</var>" type="video/mp4"&gt;
@@ -141,9 +156,10 @@
 &lt;/video&gt;</pre>
             <aside>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</aside></li><br>
         <li>Incorporados da internet:Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</li>
-    </ol>
-    <a href="index.html">Voltar</a>
+        </ol>
+
     <h1>Algumas considerações:</h1>
+    
     <h2>Declarações iniciais de um código HTML:</h2>
         <p>No início de uma página html devemos usar sempre &lt;!DOCTYPE html&gt;, para indicar ao brownser que iremos trabalhar com HTML5, além de usar &lt;html&gt; logo após.</p>
         <p>Usa-se, logo após a tag &lt;head&gt; a tag &lt;meta charset="UTF-8"&gt;( que indica ao navegador que iremos trabalhar com o padrão de escrita UTF-8. O mais comum na <abbr title="world wide web">www</abbr>), além de outros elementos que também compõem a &lt;meta&gt;, como por exemplo &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;, para que o navegador identifique como a página deverá interpretar o códio da página</p>
@@ -152,6 +168,7 @@
         <p>Seperadamente dos caracteres especiais, usados na sintaxe do HTML, Não é necessário uso de de referência de caracteres (& seguido do código). Pois os navegadores usam internamente o padrão unicode. O que significa que podem lidar com todos os caracteres definidos no padrão unicode.</p>
         <p>Então a melhor prática é aplicar os símbolos diretamente no código.</p>
         <p>Exemplo: &lt;p&gt;This is © 2015. Breach will entail a fine of € 400&lt;/p&gt;</p>
-        <p>Não há necessidade de escrever & copy; ou & euro;</p>   
+        <p>Não há necessidade de escrever & copy; ou & euro;</p>
+    <br><hr><a href="index.html">Voltar</a>
 </body>
 </html>
