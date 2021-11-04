@@ -156,16 +156,15 @@ Do próprio servidor:
 &lt;/video&gt;</pre>
             <aside>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</aside></li><br>
         <li>Incorporados da internet:Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</li>
-        </ol>
+        </ol><hr>
 
     <h1>Algumas considerações:</h1>
-    
-    <h2>Declarações iniciais de um código HTML:</h2>
+    <h2>Início do código:</h2>
         <p>No início de uma página html devemos usar sempre &lt;!DOCTYPE html&gt;, para indicar ao brownser que iremos trabalhar com HTML5, além de usar &lt;html&gt; logo após.</p>
         <p>Usa-se, logo após a tag &lt;head&gt; a tag &lt;meta charset="UTF-8"&gt;( que indica ao navegador que iremos trabalhar com o padrão de escrita UTF-8. O mais comum na <abbr title="world wide web">www</abbr>), além de outros elementos que também compõem a &lt;meta&gt;, como por exemplo &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;, para que o navegador identifique como a página deverá interpretar o códio da página</p>
         <p>As declarações meta devem estar nos primeiros 1024 bytes da página, então quanto antes forem mensionadas, melhor.</p>
-        <p>caracteres especiais:</p>
-        <p>Seperadamente dos caracteres especiais, usados na sintaxe do HTML, Não é necessário uso de de referência de caracteres (& seguido do código). Pois os navegadores usam internamente o padrão unicode. O que significa que podem lidar com todos os caracteres definidos no padrão unicode.</p>
+    <h2>caracteres especiais:</h2>
+        <p>Seperadamente dos caracteres especiais usados na sintaxe do HTML. Não é necessário uso de de referência de caracteres (& seguido do código). Pois os navegadores usam internamente o padrão unicode. O que significa que podem lidar com todos os caracteres definidos no padrão unicode.</p>
         <p>Então a melhor prática é aplicar os símbolos diretamente no código.</p>
         <p>Exemplo: &lt;p&gt;This is © 2015. Breach will entail a fine of € 400&lt;/p&gt;</p>
         <p>Não há necessidade de escrever & copy; ou & euro;</p>
