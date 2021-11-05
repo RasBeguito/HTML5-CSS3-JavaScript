@@ -2,4 +2,29 @@
 
 body {
     background-color: rgb(226, 242, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 0px #66757A;
+    font-weight: 70px;
+    padding: 10px;
+    box-shadow:  3px 3px 0px #66757A;
+    background-color: #CFEFFA;
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+}
+a:hover{
+        color: black;
+}
+div.Hide:hover{
+                cursor: alias;
+}
+div.Hide > li > ul {
+                    display: none;
+}
+div.Hide:hover > li > ul {
+                        display: block;
 }
