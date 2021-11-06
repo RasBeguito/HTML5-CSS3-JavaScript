@@ -13,19 +13,25 @@ header > h1, header > h2 {
     background-color: #CFEFFA;
 }
 article {
-        text-align: center;
         box-shadow:  3px 3px 0px #66757A;
         background-color: #CFEFFA;
         padding: 10px;
+}
+nav {
+    text-align: center;
 }
 h1 {
     font-size: 3.5vmin;
 }
 h2 {
     font-size: 2.7vmin;
+    text-align: center;
+    box-shadow:  1px 1px 1px 1px #546469;
 }
 h3 {
     font-size: 2.3vmin;
+    text-align: center;
+    box-shadow:  1px 1px 1px 1px #546469;
 }
 h4 {
     font-size: 2.2vmin;
@@ -35,6 +41,8 @@ p {
 }
 a {
     color: red;
+    box-shadow:  1px 1px 1px 1px #546469;
+    padding: 0.4vmin;
 }
 a:active {
             color: yellow;
