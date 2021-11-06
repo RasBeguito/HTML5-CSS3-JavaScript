@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p style="color: red;">Em construção (muita coisa irá mudar ainda)</p>
-
+    <p style="color: red;">Em construção (muita coisa irá mudar ainda)</p>
+<main>
+<header>
     <h1>Acompanhamento de estudos para HTML,CSS e JavaScript</h1>
-    <div class="h2">        
-    <h2 class="MaisMargemBotton">Uma lista dos principais comandos</h2>     
-        <a href="tagshtml5.html" class="MaisMargemBotton">HTML</a><br>
-        <a href="comandoscss.html" class="MaisMargemBotton">CSS</a><br>
-        <a href="comandosjavascript.html" class="MaisMargemBotton">JavaScript</a>
+</header>
+<article>
+    <div class="Nav">        
+    <h2 class="MaisMargemBotton">Uma lista dos principais comandos</h2>
     </div>
-
+<nav>
+        <a href="tagshtml5.html" class="MaisMargemBotton">HTML</a>&emsp;
+        <a href="comandoscss.html" class="MaisMargemBotton">CSS</a>&emsp;
+        <a href="comandosjavascript.html" class="MaisMargemBotton">JavaScript</a>
+</nav>
+</article>
+<header>
     <h2>Um pouco sobre HTML, CSS e Java Script</h2>
-
+</header>
+<article>
     <h3>HTML - Hyper Text Markup Language (Linguagem de Marcação de Hipertexto):</h3>
         <p> Serve para introduzir o conteúdo da página web, tal como os textos e as mídias, adicionando toda a semântica dos mesmos. Dizendo o que é o cabeçalho, título, parágrafo, imagem, citações, quais são as frases fortes, e em destaque, dizer qual parte deve ser enfatizada, etc. Através das TAGS. Criando assim a estrutura do conteúdo da página.</p>
         <p>Algumas tags não apresentam tag de fechamento, como no caso de &lt;img src="https://google.com" alt="Site da Google"/&gt;. Existem algumas que não possuem nem o / no final da tag. Isso porque todas as informações já estão contidas no atributo, ou seja, dentro da tag.</p>
@@ -76,8 +83,8 @@
         
     <h5>Atributos Não Globais</h5>
         <p>São os que não podesm ser usadas por qualquer tag, são usados por uma ou mais, mas não todas. Como por exemplo <en>start,  reversed e src</en></p>
-
-
+</article><br>
+<article>
     <h3>CSS</h3>
         <ul>
             <li>Cascading Style Sheet (Folhas de Estilo em Cascata).</li>
@@ -92,7 +99,8 @@
             <li>Incorporações em linha sobrescrevem xxx, que por sua vez sobrescrevem as em Cascata.</li>
             <li>É possível utilizar mais de um arquivo .css ao mesmo tempo, daí a palavra "Cascata", tomando cuidado para não deixar o código confuso.</li>
         </ul>
- 
+</article><br>
+<article> 
     <h3>JavaScript</h3>
         <ul>
             <li>Java é o nome de uma ilha produtora de café, também é sinonimo de café em alguns lugares. Script é um conjunto de instruções para que uma função seja executada</li>
@@ -100,8 +108,8 @@
             <li>Pode ser usado tanto no front-end(Parte que o usuário interage), quanto no back-end(onde ficam armazenados os dados referentes á página)</li>
             <li>É uma linguagem de programação</li>
         </ul>
-    <hr>
- 
+</article><br>
+<article> 
     <h2>Para entender melhor</h2>
         <picture>
             <source media="(max-width: 750px)" width=350 srcset="images/htmlcar1000.png" type="image/png">
@@ -118,8 +126,11 @@
             <source media="(max-width: 1050px)" width=700 srcset="images/javascriptcar1000.png" type="image/png">
             <img src="images/javascriptcar1000.png" alt="Equipamentos de um carro">
         </picture>
-    <hr>
-
+</article>
+</main>
+<hr>
+<foot>
     <p><small>Por <a href="perfil.html">Rafael Beguito</a></small></p>
+</foot>
 </body>
 </html>
