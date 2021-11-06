@@ -25,6 +25,12 @@ h4 {
 p {
     text-align: justify;
 }
+a {
+    color: red;
+}
+a:active {
+            color: yellow;
+}
 a:hover{
         color: black;
 }
@@ -35,14 +41,14 @@ div.h2 {
         padding: 10px;
 }
 ul.Hide > li > ul > li, ul.Hide > li > ol > li {
-                        margin: 10px;
-                        display: none;
+                                                margin: 10px;
+                                                display: none;
 }
 ul.Hide > li:hover > ul > li{
                             display:inline;
                             cursor: alias;
 }
 ul.Hide > li {
-    display:inline;
-    cursor: pointer;
+                display:inline;
+                cursor: pointer;
 }
