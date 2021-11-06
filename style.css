@@ -8,7 +8,7 @@ body {
 header > h1, header > h2 {
     padding: 10px;
     text-align: center;
-    text-shadow: 1px 1px 0px #66757A;
+    text-shadow: 1px 1px 0px #8ca4ac;
     box-shadow:  3px 3px 0px #66757A;
     background-color: #CFEFFA;
 }
@@ -41,7 +41,7 @@ p {
 }
 a {
     color: red;
-    box-shadow:  1px 1px 1px 1px #546469;
+    box-shadow:  0.5px 0.5px 0.5px 0.5px #546469;
     padding: 0.4vmin;
 }
 a:active {
@@ -50,15 +50,15 @@ a:active {
 a:hover{
         color: black;
 }
-ul.Hide > li > ul > li, ul.Hide > li > ol > li {
-                                                margin: 10px;
+ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol {
                                                 display: none;
 }
-ul.Hide > li:hover > ul > li{
+ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
                             display:inline;
                             cursor: alias;
 }
 ul.Hide > li {
                 display:inline;
                 cursor: pointer;
+
 }
