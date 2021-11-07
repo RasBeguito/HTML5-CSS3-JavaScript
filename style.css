@@ -22,6 +22,9 @@ h4 {
 p {
     text-align: justify;
 }
+pre {
+    font-size: 1.9vmin;
+}
 header > h1, header > h2 {
     padding: 10px;
     text-align: center;
@@ -52,12 +55,12 @@ var {
 ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
                                                 display: none;
 }
-ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol, span.Hide:hover > span  {
+ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
                             display:inline;
                             cursor: alias;
 }
+
 li {
                 display:inline;
                 cursor: pointer;
-
 }

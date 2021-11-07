@@ -14,7 +14,6 @@
 <header>
     <h1>TAGS mais usadas HTML5</h1>
 </header>
-        <p> As TAGS que estiverem dentro de ( ), ao lado, são comandos que podem ser incrementados dentro da tag acima.</p>
 <main>
 <article>
     <h2>Semânticas</h2>
@@ -81,14 +80,11 @@
             </li>
             <li>Citações<br>
                 <ol>
-                    <li>Parafrase curta (citação)</li>
+                    <li>Parafrase (citação) curta</li>
                         <ul type="circle">
                             <li><pre>&lt;q&gt;&lt;/q&gt;</pre></li>
-                        </ul>
                     <li>Parafrase (citação) longa</li>
-                        <ul type="circle">
-                            <li><pre>&lt;blockquote&gt;&lt;/blockquoteq&gt; &emsp;</pre>  
-                                <pre>(cite="<var>Link relacionado</var>")</pre></li>
+                            <li><pre>&lt;blockquote&gt;&lt;/blockquoteq&gt;   &lt;!--cite="<var>Link relacionado</var>"--&gt;</pre>  
                         </ul>
                 </ol>
             </li>
@@ -129,13 +125,13 @@
             </li>            
             <li><a href="https://unicode-table.com/en/html-entities/" target="_blank" rel="nofollow">Símbolos especiais</a>
                 <ul>
-                    <li>&lt;<pre>&amp;lt;</pre></li>
-                    <li>&gt;<pre>&amp;gt;</pre></li>
-                    <li>|&thinsp;| Pequeno espaço<pre>&amp;thinsp;</pre></li>
-                    <li>|&nbsp;| Espaço sem quebra<pre>&amp;nbsp;</pre></li>
-                    <li> |&ensp;| Espaço En<pre>&amp;ensp;</pre></li>
-                    <li> |&emsp;| Espaço Em<pre>&amp;emsp;</pre></li>
-                    <li> &<pre>&amp;amp;</pre></li>
+                    <li><pre>&amp;lt;      &lt;!--&lt; Less than (Menor que)--&gt;</pre></li>
+                    <li><pre>&amp;gt;      &lt;!--&gt; More than (Maior que)--&gt;</pre></li>
+                    <li><pre>&amp;thinsp;  &lt;!--Pequeno espaço--&gt;</pre>|&thinsp;|</li>
+                    <li><pre>&amp;nbsp;    &lt;!--No break space (Espaço sem quebra)--&gt;</pre>|&nbsp;|</li>
+                    <li><pre>&amp;ensp;    &lt;!-- Espaço En--&gt;</pre>|&ensp;|</li>
+                    <li><pre>&amp;emsp;    &lt;!-- Espaço Em--&gt;</pre>|&emsp;|</li>
+                    <li><pre>&amp;amp;     &lt;!--&--&gt;</pre></li>
                 </ul>
             </li>
             <li>Adicionar ícone à aba (&lt;head&gt;)
@@ -272,36 +268,45 @@
                     </li>
                 </ul>
             </li>
-        </ul>
-
-    <span class=Hide><h4>Áudio</h4>
-        <span>
-            <pre>
-    &lt;audio&gt;        &lt;!--preload="metadata" autoplay muted controls loop--&gt;
-        &lt;source src="<var>Caminho/Arquivo.mp3</var>" type="audio/mpeg"&gt;
-        &lt;source src="<var>Caminho/Arquivo.ogg</var>" type="audio/ogg"&gt;
-        &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio&lt;/p&gt;
-    &lt;/audio&gt;
-            </pre>
-        </span>
-    </span>
-    <h4>Vídeo</h4>
-        <ol>
-            <li>Do próprio servidor:
-                <pre>
-&lt;video&gt; &emsp;        (witdh="<var>500</var>" preload="metadata" autoplay muted controls loop) *No chrome o autoplay só funciona se adicionado o atributo muted
+            <li>Áudio
+                <ul>
+                    <li>
+                        <pre>
+&lt;audio&gt;        &lt;!--preload="metadata" autoplay muted controls loop--&gt;
+    &lt;source src="<var>Caminho/Arquivo.mp3</var>" type="audio/mpeg"&gt;
+    &lt;source src="<var>Caminho/Arquivo.ogg</var>" type="audio/ogg"&gt;
+    &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio&lt;/p&gt;
+&lt;/audio&gt;
+                        </pre>
+                    </li>
+                </ul>
+            </li>
+            <li>Vídeo</li><br>
+            <li>&ensp;Do próprio servidor
+                <ul>
+                    <li>
+                        <pre>
+&lt;video&gt;   &lt;!--witdh="<var>500</var>" preload="metadata" autoplay muted controls loop--&gt;
     &lt;source src="<var>Caminho/Arquivo.mp4</var>" type="video/mp4"&gt;
     &lt;source src="<var>Caminho/Arquivo.m4v</var>" type="video/mp4"&gt;
     &lt;source src="<var>Caminho/Arquivo.webm</var>" type="video/webm"&gt;
     &lt;source src="<var>Caminho/Arquivo.ogv</var>" type="video/ogv"&gt;
     &lt;p&gt;Infelizmente seu navegador não consegue reproduzir vídeo&lt;/p&gt;
 &lt;/video&gt;
-                </pre>
-                <aside>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</aside></li><br>
-            <li>Incorporados da internet:<br>
-                <p>Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</p>
+                        </pre>
+                <p><Small>*Pode gerar muito tráfico de dados dependendo do tamanho dos arquivos. Aumentando consideravelmente o custo da operação</Small></p>
+                    </li>
+                </ul>
             </li>
-        </ol>
+            <li>&ensp;Incorporados da internet
+                <ul>
+                    <li>
+                <p>Nas plataformas de streaming como YouTube ou Vimeo pode-se clicar em compartilhar e buscar a opção incorporar, aí é só copiar e colar no código. Dessa forma não gera mais tráfego no próprio servidor. Lembrando sempre dos direitos autorais</p>
+                    </li>
+                </ul>
+            </li>
+            </li>
+        </ul>
 </article>
 </main>
 <article>
