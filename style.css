@@ -1,24 +1,9 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(226, 242, 248);
+    background-color: rgb(224, 224, 224);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.1vmin;
-}
-header > h1, header > h2 {
-    padding: 10px;
-    text-align: center;
-    text-shadow: 1px 1px 0px #8ca4ac;
-    box-shadow:  3px 3px 0px #66757A;
-    background-color: #CFEFFA;
-}
-article {
-        box-shadow:  3px 3px 0px #66757A;
-        background-color: #CFEFFA;
-        padding: 10px;
-}
-nav {
-    text-align: center;
 }
 h1 {
     font-size: 3.5vmin;
@@ -26,12 +11,10 @@ h1 {
 h2 {
     font-size: 2.7vmin;
     text-align: center;
-    box-shadow:  1px 1px 1px 1px #546469;
 }
 h3 {
     font-size: 2.3vmin;
     text-align: center;
-    box-shadow:  1px 1px 1px 1px #546469;
 }
 h4 {
     font-size: 2.2vmin;
@@ -39,25 +22,41 @@ h4 {
 p {
     text-align: justify;
 }
+header > h1, header > h2 {
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 0px #8ca4ac;
+    box-shadow:  3px 3px 0px #66757A;
+    background-color: #fdfdfd;
+}
+article {
+        box-shadow:  3px 3px 0px #66757A;
+        background-color: #fdfdfd;
+        padding: 10px;
+}
+nav {
+    text-align: center;
+}
 a {
-    color: red;
-    box-shadow:  0.5px 0.5px 0.5px 0.5px #546469;
-    padding: 0.4vmin;
+    color: #970000;
 }
 a:active {
             color: yellow;
 }
-a:hover{
-        color: black;
+a:hover {
+        color: rgb(255, 0, 0);
 }
-ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol {
+var {
+    color:rgb(91, 113, 134)
+}
+ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
                                                 display: none;
 }
-ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
+ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol, span.Hide:hover > span  {
                             display:inline;
                             cursor: alias;
 }
-ul.Hide > li {
+li {
                 display:inline;
                 cursor: pointer;
 
