@@ -15,6 +15,9 @@ li {
         cursor: pointer;
         text-align: left;
 }
+ul {
+    text-align: left;
+}
 footer {
     font-size: smaller;
 }
@@ -34,6 +37,9 @@ a:active {
 a:hover {
         color: rgb(255, 0, 0);
 }
+pre {
+    font-size: 2vw;
+}
 h1, h2 {
         text-align: center;
         padding: 10px;
@@ -41,10 +47,10 @@ h1, h2 {
 h1{
         text-shadow: 1px 1px 0px #8ca4ac;
 }
-ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
+ul.Hide > li > span, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
         display: none;
 }
-ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
+ul.Hide > li:hover > span, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
         display:inline;
         cursor: alias;
 }
