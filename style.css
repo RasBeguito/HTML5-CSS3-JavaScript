@@ -25,6 +25,7 @@ var {
 }
 a {
         color: #970000;
+        text-decoration: none;
 }
 a:active {
         color: yellow;
