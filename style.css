@@ -3,7 +3,7 @@
 body {
         background-color: rgb(224, 224, 224);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 2.5vmin;
+        font-size: 1vmax;
 }
 article, header  {
         box-shadow:  3px 3px 0px #66757A;
@@ -15,8 +15,6 @@ li {
         cursor: pointer;
         text-align: left;
 }
-ul {
-    text-align: left;
 }
 footer {
     font-size: smaller;
@@ -26,6 +24,13 @@ nav {
 }
 var {
         color:rgb(91, 113, 134)
+}
+h1, h2 {
+        text-align: center;
+        padding: 10px;
+}
+h1{
+        text-shadow: 1px 1px 0px #8ca4ac;
 }
 a {
         color: #970000;
@@ -37,20 +42,16 @@ a:active {
 a:hover {
         color: rgb(255, 0, 0);
 }
+div.LeftAlign {
+    text-align: left;
+}
 pre {
     font-size: 2vw;
 }
-h1, h2 {
-        text-align: center;
-        padding: 10px;
-}
-h1{
-        text-shadow: 1px 1px 0px #8ca4ac;
-}
-ul.Hide > li > span, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
+ul.Hide > li > span {
         display: none;
 }
-ul.Hide > li:hover > span, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
+ul.Hide > li:hover > span {
         display:inline;
         cursor: alias;
 }
