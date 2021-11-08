@@ -1,65 +1,48 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(224, 224, 224);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.1vmin;
+        background-color: rgb(224, 224, 224);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5vmin;
 }
-h1 {
-    font-size: 3.5vmin;
-}
-h2 {
-    font-size: 2.7vmin;
-    text-align: center;
-}
-h3 {
-    font-size: 2.3vmin;
-}
-h4 {
-    font-size: 2.2vmin;
-}
-p {
-    text-align: left;
-}
-pre {
-    font-size: 1.9vmin;
-}
-header > h1, header > h2 {
-    padding: 10px;
-    text-align: center;
-    text-shadow: 1px 1px 0px #8ca4ac;
-    box-shadow:  3px 3px 0px #66757A;
-    background-color: #fdfdfd;
-}
-article {
+article, header  {
         box-shadow:  3px 3px 0px #66757A;
-        background-color: #fdfdfd;
+        background-color: #fafafa;
         padding: 10px;
 }
+li {
+        display:inline;
+        cursor: pointer;
+}
+footer {
+    font-size: smaller;
+}
 nav {
-    text-align: center;
+        text-align: center;
+}
+var {
+        color:rgb(91, 113, 134)
 }
 a {
-    color: #970000;
+        color: #970000;
 }
 a:active {
-            color: yellow;
+        color: yellow;
 }
 a:hover {
         color: rgb(255, 0, 0);
 }
-var {
-    color:rgb(91, 113, 134)
+h1, h2 {
+        text-align: center;
+        padding: 10px;
+}
+h1{
+        text-shadow: 1px 1px 0px #8ca4ac;
 }
 ul.Hide > li > ul > li, ul.Hide > li > ol > li, ul.Hide > li > ol, span.Hide > span {
-                                                display: none;
+        display: none;
 }
 ul.Hide > li:hover > ul > li, ul.Hide > li:hover > ol > li, ul.Hide > li:hover > ol {
-                            display:inline;
-                            cursor: alias;
-}
-
-li {
-                display:inline;
-                cursor: pointer;
+        display:inline;
+        cursor: alias;
 }
