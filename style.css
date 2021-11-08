@@ -13,6 +13,7 @@ article, header  {
 li {
         display:inline;
         cursor: pointer;
+        text-align: left;
 }
 footer {
     font-size: smaller;
