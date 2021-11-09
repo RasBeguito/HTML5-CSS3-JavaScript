@@ -3,7 +3,7 @@
 body {
         background-color: rgb(224, 224, 224);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1vmax;
+        font-size: clamp(0.4em, 0.3em + 0.8vw , 0.7em);
 }
 article, header  {
         box-shadow:  3px 3px 0px #66757A;
@@ -16,8 +16,6 @@ ul {
 li {
         display:inline;
         cursor: pointer;
-        text-align: left;
-}
 }
 footer {
     font-size: smaller;
@@ -48,9 +46,6 @@ a:hover {
 div.LeftAlign {
     text-align: left;
 }
-pre {
-    font-size: 2vw;
-}
 ul.Hide > li > span {
         display: none;
 }
@@ -58,3 +53,7 @@ ul.Hide > li:hover > span {
         display:inline;
         cursor: alias;
 }
+pre {
+    font-size: 0.9em;
+}
+
